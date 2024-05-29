@@ -3,7 +3,7 @@
 ######################################################
 FROM quay.io/curl/curl-base as builder
 
-ARG PLUTO_VERSION=5.19.4
+ARG PLUTO_VERSION
 
 #
 # download pluto
