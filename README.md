@@ -11,6 +11,6 @@ and secure image! And kudos to Fairwinds for creating pluto!
 ## Licensing
 
 The container image contains software packages that are direct or transitive
-dependencies. As pluto is the main component, I have taken its [licensense
+dependencies. As pluto is the main component, I have taken its [license
 Apache-2.0](https://github.com/FairwindsOps/pluto/blob/master/LICENSE) as the
 license for this container image.
