@@ -9,8 +9,8 @@ ARG PLUTO_VERSION
 # download pluto
 #
 WORKDIR /
-RUN curl -L --silent -o pluto_${PLUTO_VERSION}_linux_amd64.tar.gz https://github.com/FairwindsOps/pluto/releases/download/v${PLUTO_VERSION}/pluto_${PLUTO_VERSION}_linux_amd64.tar.gz && \
-    tar xvf pluto_${PLUTO_VERSION}_linux_amd64.tar.gz
+RUN curl -L --silent -o pluto_${PLUTO_VERSION/v/}_linux_amd64.tar.gz https://github.com/FairwindsOps/pluto/releases/download/${PLUTO_VERSION}/pluto_${PLUTO_VERSION/v/}_linux_amd64.tar.gz && \
+    tar xvf pluto_${PLUTO_VERSION/v/}_linux_amd64.tar.gz
 
 ######################################################
 ######################################################
