@@ -79,6 +79,7 @@ jobs:
           push: true
           tags: |
             ${{ steps.meta.outputs.tags }}
+            ghcr.io/kastl-ars/wolfi-pluto:latest
             ghcr.io/kastl-ars/wolfi-pluto:${{ steps.pluto_version.outputs.release }}
           labels: ${{ steps.meta.outputs.labels }}
           build-args: |
