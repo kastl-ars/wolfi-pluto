@@ -30,6 +30,13 @@ jobs:
       packages: write
       attestations: write
     steps:
+      - id: pluto_version
+        uses: pozetroninc/github-action-get-latest-release@master
+        with:
+          repository: FairwindsOps/pluto/
+          excludes: prerelease, draft
+          token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -42,4 +49,4 @@ jobs:
           config: wolfi-pluto.yaml
           # Tag is the tag that will be published.
           # Required.
-          tag: ghcr.io/kastl-ars/wolfi-pluto:latest
+          tag: ghcr.io/kastl-ars/wolfi-pluto:latest ghcr.io/kastl-ars/wolfi-pluto:${{ steps.pluto_version.outputs.release }}
