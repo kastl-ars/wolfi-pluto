@@ -31,3 +31,8 @@ accounts:
 archs:
   - amd64
   - arm64
+
+annotations:
+  org.opencontainers.image.source: "https://github.com/kastl-ars/wolfi-pluto"
+  org.opencontainers.image.url: "https://github.com/kastl-ars/wolfi-pluto"
+  org.opencontainers.image.licenses: "Apache-2.0"
